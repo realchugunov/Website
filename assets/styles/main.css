@@ -279,6 +279,14 @@ hr {
 }
 
 .gray-bg {
+  margin-left: 360px;
+  --column-count: 4;
+  display: grid;
+  gap: 10rem;
+  grid-template-columns: repeat(var(--column-count), 1fr);
+ 
+
+
   background: #f8f8f8;
 }
 
@@ -578,7 +586,7 @@ hr {
 
 /* ---- Section Headings ---- */
 .sec-heading {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -3121,9 +3129,16 @@ fieldset[disabled] .form-control:hover {
           transition: all 0.3s;
 }
 
+.grid-stride {
+--column-count: 3;
+display: grid;
+gap: 1rem;
+grid-template-columns: repeat(var(--column-count), 1fr);  
+}
+
 .card-images {
-  height: 550px;
-  position:absolute;
+  position: absolute;
+  height: 500px;
   z-index:0;
 }
 
@@ -3137,8 +3152,8 @@ fieldset[disabled] .form-control:hover {
   z-index:1;
   padding-left: 20px;
   padding-top: 47rem;
-  font-size: 3rem;
-  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+  color: #56c0e1
 }
 
 .ft-cards .ft-item span {
