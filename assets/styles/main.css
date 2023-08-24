@@ -587,7 +587,7 @@ hr {
   text-transform: uppercase;
   font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 300;
-  color: #999;
+  color: #56c0e1;
   letter-spacing: 2.5px;
 }
 
@@ -1286,7 +1286,7 @@ h6, .progress-group .progress-title,
 .blog-post-nav .next-btn, .sidebar .tags-widget .tag-list li a, .contact-1 .contact-wrapper .contact-info-wrapper address .address-group span, .contact-1 .contact-wrapper .contact-info-wrapper address .address-group a,
 .contact-1 .contact-wrapper .contact-info-wrapper address .address-group p, .contact-1 .contact-wrapper .contact-info-wrapper address .show-map-link a, .landing-hero .heading-wrapper .cta-btn, .shop-sidebar .filter-widget label, .shop-sidebar-vertical .filter-widget label, .shop-sidebar .tags-widget .tag-list li a, .shop-sidebar-vertical .tags-widget .tag-list li a, .checkout-table tbody tr td:first-child, .prod-reviews .tp-review .tpr-name {
   font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-  color: #111;
+  color: #56c0e1;
   text-transform: uppercase;
 }
 
@@ -1464,8 +1464,8 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
   position: relative;
   display: inline-block;
   padding: 8px 38px;
-  background: #111;
-  color: #ececec;
+  background: #000A18;
+  color: #56c0e1;
   font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -1477,8 +1477,8 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 }
 
 .btn:visited, .btn-ghost:visited, .btn-ghost-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited, .btn-text:visited, .btn-text-light:visited, .btn-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited {
-  color: #ececec;
-  background: #111;
+  color: #56c0e1;
+  background: #000A18;
 }
 
 .btn:visited:hover, .btn-ghost:visited:hover, .btn-ghost-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited:hover, .btn-text:visited:hover, .btn-text-light:visited:hover, .btn-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited:hover {
@@ -1557,7 +1557,7 @@ input[class="btn-ghost"]:after {
 /* ---- 2.4 Text Buttons ---- */
 .btn-text, .btn-text-light {
   background: none;
-  border: 2px solid rgba(17, 17, 17, 0);
+  border: 2px solid rgba(224, 34, 34, 0);
   color: #777;
 }
 
@@ -1598,8 +1598,8 @@ input[class="btn-ghost"]:after {
 
 /* ---- 2.6 Light Buttons ---- */
 .btn-light {
-  color: #111;
-  background: #ececec;
+  color: #56c0e1;
+  background: #000A18;
 }
 
 .btn-light:visited {
@@ -1935,7 +1935,7 @@ fieldset[disabled] .form-control:hover {
 }
 
 .breadcrumb li a {
-  color: #999;
+  color: #56c0e1;
 }
 
 .breadcrumb li a:focus {
@@ -2559,7 +2559,7 @@ fieldset[disabled] .form-control:hover {
 }
 
 .navbar .navbar-header {
-  width: 27%;
+  width: 25%;
   margin-top: 6px;
 }
 
@@ -2577,7 +2577,7 @@ fieldset[disabled] .form-control:hover {
   font-size: 0.8em;
   font-weight: 400;
   letter-spacing: 2px;
-  color: #999;
+  color: #55C0E1;
   -webkit-transition: color 0.5s;
           transition: color 0.5s;
 }
@@ -2588,7 +2588,7 @@ fieldset[disabled] .form-control:hover {
 
 .navbar .navbar-nav li a:hover {
   background: none;
-  color: #111;
+  color: #000A18;
 }
 
 .navbar .navbar-nav li a i[class*="linea-"] {
@@ -4209,9 +4209,15 @@ fieldset[disabled] .form-control:hover {
 	10.0 Counters
 -------------------------------------------------- */
 /* ---- 10.1 Circle Counters ---- */
+
+.agriculture {
+
+
+}
+
 .circles-counters, .circles-counters-dark-bg {
   position: relative;
-  background: #ccc url(../images/sea-1.jpg);
+  background: #ccc url(../images/divisionimage.png);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -4258,7 +4264,7 @@ fieldset[disabled] .form-control:hover {
 /* ---- 10.2 Counters - Numbers ---- */
 .number-counters, .number-counters-dark-bg {
   position: relative;
-  background: url(../images/mac-coffe-photo.jpg);
+  background: url(../images/driversx.png);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
@@ -7865,7 +7871,7 @@ form .input-error-2:focus {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(../images/hero/fog.jpg);
+  background: url(../images/backgroundStride.png);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -7905,7 +7911,7 @@ form .input-error-2:focus {
 .main-demo-hero .hero-content-wrapper .hero-content .hero-subheading, .fs-video-hero .hero-content-wrapper .hero-content .hero-subheading, .fw-video-hero .hero-content-wrapper .hero-content .hero-subheading, .text-slider-hero .hero-content-wrapper .hero-content .hero-subheading, .freelancer-hero .hero-content-wrapper .hero-content .hero-subheading, .agency2-hero .hero-content-wrapper .hero-content .hero-subheading, .animated-hero .hero-content-wrapper .hero-content .hero-subheading, .web-app-hero .hero-content-wrapper .hero-content .hero-subheading {
   margin-top: 100px;
   margin-bottom: 20px;
-  color: #999;
+  color: #56c0e1;
 }
 
 /* ---- 20.2 Full Screen Slider ---- */
