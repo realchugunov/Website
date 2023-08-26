@@ -610,9 +610,7 @@ hr {
   -moz-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  margin: 20px;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -moz-box-align: start;
@@ -631,9 +629,9 @@ hr {
   position: relative;
 }
 .ag-offer_item:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) {
-  border-top: 1px solid #c1c1c1;
+  border-top: 0px solid #c1c1c1;
 }
-.ag-offer_item:not(:nth-child(3n)) {
+.ag-offer_item:not(:nth-child(4n)) {
   border-right: 1px solid #c1c1c1;
 }
 .ag-offer_item:nth-child(1) .ag-offer_hidden-item {
