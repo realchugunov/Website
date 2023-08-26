@@ -894,15 +894,11 @@ hr {
   }
 
 }
-
-
-
-
-
-
-
-
 /* my hover effect */
+
+.agriculture {
+  height: 100px;
+}
 
 
 .sec-heading {
@@ -4612,7 +4608,7 @@ cursor: pointer;
 
 .circles-counters, .circles-counters-dark-bg {
   position: relative;
-  background: #ccc url(../images/divisionimage.png);
+  background: #ccc url(../images/divisionMain.png);
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 100px;
