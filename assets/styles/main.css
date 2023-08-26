@@ -2585,7 +2585,7 @@ fieldset[disabled] .form-control:hover {
   font-size: 0.8em;
   font-weight: 400;
   letter-spacing: 2px;
-  color: #55C0E1;
+  color: #000A18;
   -webkit-transition: color 0.5s;
           transition: color 0.5s;
 }
@@ -3130,16 +3130,15 @@ fieldset[disabled] .form-control:hover {
 }
 
 .grid-stride {
---column-count: 3;
-display: grid;
-gap: 1rem;
-grid-template-columns: repeat(var(--column-count), 1fr);  
+display: flex;
+flex-direction: row;
+gap: 2rem;
+justify-content: space-between; 
 }
 
 .card-images {
-  position: absolute;
-  height: 500px;
-  z-index:0;
+height: 40rem;
+margin-top: 40px;
 }
 
 .card-images:hover {
@@ -3148,12 +3147,7 @@ grid-template-columns: repeat(var(--column-count), 1fr);
 }
 
 .card-text {
-  position:absolute;
-  z-index:1;
-  padding-left: 20px;
-  padding-top: 47rem;
-  font-size: 1.8rem;
-  color: #56c0e1
+
 }
 
 .ft-cards .ft-item span {
@@ -7886,7 +7880,7 @@ form .input-error-2:focus {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(../images/backgroundStride.png);
+  background: url(../images/backgroundStrideTwin.png);
   background-size: cover;
   background-attachment: fixed;
 }
