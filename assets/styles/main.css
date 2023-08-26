@@ -279,7 +279,7 @@ hr {
 }
 
 .gray-bg {
-  margin-left: 360px;
+  margin-left: 240px;
   --column-count: 4;
   display: grid;
   gap: 10rem;
@@ -289,6 +289,81 @@ hr {
 
   background: #f8f8f8;
 }
+
+/* my edit */
+
+#Layer_1 {
+  height: 90px;
+}
+
+#Layer_2 {
+  height: 90px;
+}
+
+
+
+.containerX {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 37vh;
+
+}
+.containerX .boxX {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 20px;
+  transition: 0.3s all ease-in-out;
+  position: relative;
+  box-shadow: 0px 0px 15px background;
+  /* Link */
+}
+.containerX .boxX .boxContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.containerX .boxX .boxContent .iconX {
+  color: #8293ff;
+  font-size: 48px;
+  
+}
+.containerX .boxX .boxContent .titleX {
+  font-size: 24px;
+  color: #5dc0e1;
+  font-weight: bold;
+  padding: 10px;
+}
+.containerX .boxX .boxContent .descX {
+  color: #000a18;
+  font-size: 15px;
+  height: 20%;
+}
+.containerX .boxX a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.containerX .boxX:hover {
+  background: linear-gradient(130deg, #56c0e1 0%, #000a18 100%);
+  box-shadow: none;
+}
+.containerX .boxX:hover .iconX,
+.containerX .boxX:hover .titleX,
+.containerX .boxX:hover .descX {
+  color: #000a18;
+  transition: 0.3s all ease-in-out;
+}
+
+
+/* my edit */
+
 
 .bg-white {
   background: #fff;
@@ -902,8 +977,14 @@ hr {
 
 
 .sec-heading {
-  margin-top: 30px;
+  text-align: center;
+  margin-top: 10px;
   margin-bottom: 40px;
+}
+
+.sec-heading2 {
+  text-align: center;
+
 }
 
 
