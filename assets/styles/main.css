@@ -4781,38 +4781,44 @@ cursor: pointer;
 .welcome-container2 {
   flex: 300px;
   margin: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .welcome-container2 .cardX2 {
   font-weight: bold;
-  position: relative;
+  position:relative;
   width: 21%;
   font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
+  margin: 20px;
 }
 .welcome-container2 .cardX2 a {
-  padding: 30px;
-  width: 100%;
   border: 2px solid #5dc0e1;
   background: transparent;
   text-decoration: none;
   color: white;
   display: block;
-  transition: 2s ease;
+  transition: 1s ease;
 }
 .welcome-container2 .cardX2 a:hover {
-  transform: translate(30px);
   border-color: #5bc0eb;
+  transition-delay: 2s;
 }
 
 .cardX2:hover {
-  height: 40%;
-  width: 40%;
+  height: 60%;
+  width: 60%;
 }
 
 .welcome-container2 .cardX2 a:hover .card--display2 {
   display: none;
 }
 .welcome-container2 .cardX2 a:hover .card--hover2 {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: baseline;
 }
 .welcome-container2 .cardX2 a  {
   font-size: 15px;
@@ -4829,7 +4835,7 @@ cursor: pointer;
 }
 .welcome-container2 .cardX2 a .card--hover2 p {
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 .welcome-container2 .cardX2 a .card--hover2 p.link {
   margin: 20px 0 0;
