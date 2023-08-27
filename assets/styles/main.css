@@ -4773,18 +4773,26 @@ cursor: pointer;
 
 /* New Circles */
 
+
+
 .card-container {
   flex: 300px;
-  margin: 30px;
+  margin: 10px;
+}
+
+.cardZ {
+  margin-top: 100px;
+  padding: 23px;
 }
 
 .card-container .cardZ {
   font-weight: bold;
   position: relative;
   width: 100%;
+
 }
 .card-container .cardZ a {
-  padding: 30px;
+  padding: 40px;
   width: 100%;
   height: 400px;
   border: 2px solid #5dc0e1;
@@ -4794,9 +4802,11 @@ cursor: pointer;
   display: block;
   transition: 0.45s ease;
 }
+
+
 .card-container .cardZ a:hover {
-  transform: translate(-30px, -30px);
   border-color: #5bc0eb;
+
 }
 .card-container .cardZ a:hover .card--display {
   display: none;
@@ -4809,7 +4819,7 @@ cursor: pointer;
   margin-top: 200px;
 }
 .card-container .cardZ a .card--display h2 {
-  margin: 20px 0 0;
+  margin: 2px 0 0;
 }
 .card-container .cardZ a .card--hover {
   display: none;
@@ -4831,8 +4841,8 @@ cursor: pointer;
   width: 100%;
   height: 100%;
   left: 0;
-  top: 0;
-  border: 2px dashed black;
+  top: 20;
+
   z-index: -1;
 }
 .card-container .cardZ.card--dark a {
@@ -4859,7 +4869,7 @@ cursor: pointer;
   background: #ccc url(../images/divisionMain.png);
   background-size: cover;
   background-attachment: fixed;
-  padding-bottom: 280px;
+  padding-bottom: 120px;
 }
 
 .circles-counters:before, .circles-counters-dark-bg:before {
