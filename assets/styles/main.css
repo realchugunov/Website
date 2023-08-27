@@ -1965,7 +1965,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 /* --------------------------------------------------
 	2.0 Buttons
 -------------------------------------------------- */
-/* ---- 2.1 Defualt Buttons ---- */
+/* ---- 2.1 Default Buttons ---- */
 .btn, .btn-ghost, .btn-ghost-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light, .btn-text, .btn-text-light, .btn-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light {
   position: relative;
   display: inline-block;
@@ -1988,13 +1988,13 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 }
 
 .btn:visited:hover, .btn-ghost:visited:hover, .btn-ghost-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited:hover, .btn-text:visited:hover, .btn-text-light:visited:hover, .btn-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited:hover {
-  color: #ececec;
-  background: #3f3f3f;
+  color: #000a18;
+  background: #5dc0e1;
 }
 
 .btn:hover, .btn-ghost:hover, .btn-ghost-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover, .btn-text:hover, .btn-text-light:hover, .btn-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:hover {
-  color: #ececec;
-  background: #3f3f3f;
+  color: #000a18;
+  background: #5dc0e1;
 }
 
 .btn:focus, .btn-ghost:focus, .btn-ghost-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:focus, .btn-text:focus, .btn-text-light:focus, .btn-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:focus {
@@ -2479,6 +2479,7 @@ fieldset[disabled] .form-control:hover {
   font-weight: 300;
   color: #777;
 }
+
 
 .page-title .breadcrumb li a {
   color: #777;
@@ -4772,12 +4773,86 @@ cursor: pointer;
 
 /* New Circles */
 
+.agriculture {
+  height: 170px;
+  width: 170px;
+}
 
+.welcome-container2 {
+  flex: 300px;
+  margin: 30px;
+}
+.welcome-container2 .cardX2 {
+  font-weight: bold;
+  position: relative;
+  width: 21%;
+  font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
+}
+.welcome-container2 .cardX2 a {
+  padding: 30px;
+  width: 100%;
+  border: 2px solid #5dc0e1;
+  background: transparent;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 2s ease;
+}
+.welcome-container2 .cardX2 a:hover {
+  transform: translate(30px);
+  border-color: #5bc0eb;
+}
 
+.cardX2:hover {
+  height: 40%;
+  width: 40%;
+}
 
-
-
-
+.welcome-container2 .cardX2 a:hover .card--display2 {
+  display: none;
+}
+.welcome-container2 .cardX2 a:hover .card--hover2 {
+  display: block;
+}
+.welcome-container2 .cardX2 a  {
+  font-size: 15px;
+  margin-top: 200px;
+}
+.welcome-container2 .cardX2 a  {
+  margin: 20px 0 0;
+}
+.welcome-container2 .cardX2 a .card--hover2 {
+  display: none;
+}
+.welcome-container2 .cardX2 a .card--hover2 h2 {
+  margin: 20px 0;
+}
+.welcome-container2 .cardX2 a .card--hover2 p {
+  font-weight: normal;
+  line-height: 1.5;
+}
+.welcome-container2 .cardX2 a .card--hover2 p.link {
+  margin: 20px 0 0;
+  font-weight: bold;
+  color: #5bc0eb;
+}
+.welcome-container2 .cardX2 .card--border2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: 2px dashed #000a18;
+  z-index: -1;
+}
+.welcome-container2 .card2.card--dark2 a {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+.welcome-container2 .card2.card--dark2 a .card--hover2 .link {
+  color: #fde74c;
+}
 
 /* New Circles */
 
@@ -4793,7 +4868,7 @@ cursor: pointer;
   background: #ccc url(../images/divisionMain.png);
   background-size: cover;
   background-attachment: fixed;
-  padding-bottom: 100px;
+  padding-bottom: 600px;
 }
 
 .circles-counters:before, .circles-counters-dark-bg:before {
