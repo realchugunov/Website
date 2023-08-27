@@ -4773,8 +4773,6 @@ cursor: pointer;
 
 /* New Circles */
 
-
-
 .card-container {
   flex: 300px;
   margin: 10px;
@@ -4792,9 +4790,9 @@ cursor: pointer;
 
 }
 .card-container .cardZ a {
-  padding: 40px;
+  padding: 10px;
   width: 100%;
-  height: 400px;
+  height: 500px;
   border: 2px solid #5dc0e1;
   background: transparent;
   text-decoration: none;
@@ -4803,27 +4801,24 @@ cursor: pointer;
   transition: 0.45s ease;
 }
 
-
 .card-container .cardZ a:hover {
   border-color: #5bc0eb;
-
 }
 .card-container .cardZ a:hover .card--display {
-  display: none;
+  display: inline;
 }
 .card-container .cardZ a:hover .card--hover {
-  display: block;
+  display: inline;
 }
 .card-container .cardZ a .card--display i {
   font-size: 60px;
   margin-top: 200px;
 }
 .card-container .cardZ a .card--display h2 {
-  margin: 2px 0 0;
+  margin: 12px 0 0;
+  margin-bottom: 10px;
 }
-.card-container .cardZ a .card--hover {
-  display: none;
-}
+
 .card-container .cardZ a .card--hover h2 {
   margin: 20px 0;
 }
@@ -4842,7 +4837,6 @@ cursor: pointer;
   height: 100%;
   left: 0;
   top: 20;
-
   z-index: -1;
 }
 .card-container .cardZ.card--dark a {
@@ -4854,6 +4848,18 @@ cursor: pointer;
   color: #fde74c;
 }
 
+.icon-division {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.division-img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
 
 /* New Circles */
 
