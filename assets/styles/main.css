@@ -319,6 +319,7 @@ hr {
   transition: 0.3s all ease-in-out;
   position: relative;
   box-shadow: 0px 0px 15px background;
+  font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
   /* Link */
 }
 .containerX .boxX .boxContent {
@@ -327,6 +328,7 @@ hr {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
 }
 .containerX .boxX .boxContent .iconX {
   color: #8293ff;
@@ -341,8 +343,9 @@ hr {
 }
 .containerX .boxX .boxContent .descX {
   color: #000a18;
-  font-size: 15px;
+  font-size: 16px;
   height: 20%;
+  
 }
 .containerX .boxX a {
   position: absolute;
@@ -358,7 +361,7 @@ hr {
 .containerX .boxX:hover .iconX,
 .containerX .boxX:hover .titleX,
 .containerX .boxX:hover .descX {
-  color: #000a18;
+  color: white;
   transition: 0.3s all ease-in-out;
 }
 
@@ -4766,6 +4769,18 @@ cursor: pointer;
 	10.0 Counters
 -------------------------------------------------- */
 /* ---- 10.1 Circle Counters ---- */
+
+/* New Circles */
+
+
+
+
+
+
+
+
+/* New Circles */
+
 
 .count-wrapper{
   display: flex;
