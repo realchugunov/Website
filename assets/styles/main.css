@@ -244,9 +244,6 @@ hr {
 
 /* New Navigate Bar*/
 
-body {
-  font-family: "Century Gothic", 'Lato', sans-serif;
-}
 
 a {
 text-decoration: none;
@@ -389,18 +386,17 @@ text-decoration: none;
   height: 90px;
 }
 
-
-
 .containerX {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 37vh;
+  height: 50vh;
+  margin-bottom: 10vh;
 
 }
 .containerX .boxX {
-  width: 300px;
-  height: 310px;
+  width: 320px;
+  height: 330px;
   padding-top: 10px;
   border-radius: 10px;
   background-color: white;
@@ -433,6 +429,8 @@ text-decoration: none;
 .containerX .boxX .boxContent .descX {
   color: #000a18;
   font-size: 16px;
+  text-align: left;
+  margin-left: 15px;
   height: 20%;
   
 }
@@ -493,7 +491,7 @@ text-decoration: none;
 
 .section {
   padding-top: 0px;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
 }
 
 .section-heading h1,
@@ -1070,83 +1068,81 @@ text-decoration: none;
 
 /*Welcome Header */
 
-.welcome-container {
-  flex: 300px;
-  margin: 30px;
-}
-.welcome-container .cardX {
-  font-weight: bold;
-  position: relative;
+.about-us{
+  height: 70vh;
   width: 100%;
-  font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
+  padding: 40px 0;
+  background: #ddd;
 }
-.welcome-container .cardX a {
-  padding: 30px;
-  width: 100%;
-  border: 2px solid #000a18;
-  background: white;
+
+.about-us-pic {
+  height: 400px;
+  width: 430px;
+}
+
+.pic {
+  height: auto;
+  width:  302px;
+}
+.about-stride{
+  width: 1130px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text-about{
+  width: 540px;
+}
+
+.text-about h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.text-about h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+span{
+  color: #5dc0e1;
+}
+.text-about p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.data-us{
+  margin-top: 30px;
+}
+.hire{
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
   text-decoration: none;
-  color: #000a18;
-  display: block;
-  transition: 2s ease;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
 }
-.welcome-container .cardX a:hover {
-  transform: translate(-30px, -30px);
-  border-color: #5bc0eb;
+.hire:hover{
+  background: #000;
+  border: 1px solid #4070f4;
 }
-.welcome-container .cardX a:hover .card--display {
-  display: none;
-}
-.welcome-container .cardX a:hover .card--hover {
-  display: block;
-}
-.welcome-container .cardX a  {
-  font-size: 20px;
-  margin-top: 200px;
-}
-.welcome-container .cardX a  {
-  margin: 20px 0 0;
-}
-.welcome-container .cardX a .card--hover {
-  display: none;
-}
-.welcome-container .cardX a .card--hover h2 {
-  margin: 20px 0;
-}
-.welcome-container .cardX a .card--hover p {
-  font-weight: normal;
-  line-height: 1.5;
-}
-.welcome-container .cardX a .card--hover p.link {
-  margin: 20px 0 0;
-  font-weight: bold;
-  color: #5bc0eb;
-}
-.welcome-container .cardX .card--border {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  border: 2px dashed #000a18;
-  z-index: -1;
-}
-.welcome-container .card.card--dark a {
-  color: white;
-  background-color: black;
-  border-color: black;
-}
-.welcome-container .card.card--dark a .card--hover .link {
-  color: #fde74c;
-}
+
 /*Welcome Header */
 
 
+.ws-m {
+  margin-top: 50px;
+}
 
 .sec-heading {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 10vh;
 }
 
 .sec-heading2 {
@@ -1154,7 +1150,6 @@ text-decoration: none;
   flex-direction: row;
   align-items: center;
   text-align: center;
-
 }
 
 .whatwedo {
@@ -1170,7 +1165,7 @@ text-decoration: none;
   display: flex;
   flex-direction:column;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 10vh;
 }
 
 .whatdoweoffer {
