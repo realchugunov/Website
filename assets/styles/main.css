@@ -391,7 +391,7 @@ text-decoration: none;
   justify-content: space-between;
   align-items: center;
   height: 50vh;
-  margin-bottom: 10vh;
+  margin-bottom: 20vh;
 
 }
 .containerX .boxX {
@@ -4849,6 +4849,15 @@ cursor: pointer;
 }
 
 /* ---- 12.2 Testimonials - 3 Columns Cards ---- */
+
+
+/* New Client {what they say about us} */
+
+
+/* New Client {what they say about us} */
+
+
+
 .testimonials-3col .t-item {
   padding: 40px 50px 50px 50px;
   border-top: 1px solid #f8f8f8;
@@ -4921,11 +4930,20 @@ cursor: pointer;
 }
 
 .testimonials-3col .t-clients {
-  padding-left: 0;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.partner-logos {
+  height: 100px;
+  width: 110px;
 }
 
 .testimonials-3col .t-clients li a img {
   margin: auto;
+  margin: 20px !important;
 }
 
 /* ---- 12.3 Clients List ---- */
