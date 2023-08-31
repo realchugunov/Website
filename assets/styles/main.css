@@ -1152,13 +1152,6 @@ span{
   text-align: center;
 }
 
-.whatwedo {
-  
-
-
-}
-
-
 .offerText {
   display: flex;
   flex-direction:column;
@@ -4933,7 +4926,7 @@ cursor: pointer;
 }
 
 .testimonials-3col .t-clients {
-  margin-left: 100px;
+  margin-right: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
