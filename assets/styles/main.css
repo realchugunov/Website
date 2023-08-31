@@ -3184,7 +3184,7 @@ fieldset[disabled] .form-control:hover {
   top:29px;
   right:-15px;
   display: block;
-  background: #fff;
+  background: transparent;
   width: 120px;
   padding-top: 0px;
   z-index: 1;
