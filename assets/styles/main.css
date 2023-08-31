@@ -1131,7 +1131,74 @@ span{
   background: #000;
   border: 1px solid #4070f4;
 }
+/* socials */
 
+.social-ul {
+  position: relative;
+  display: flex;
+  gap: 50px;
+}
+
+.social-ul .social-li {
+  position: relative;
+  list-style: none;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.social-ul .social-li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--clr);
+  z-index: 10;
+  font-size: 2em;
+  transition: 0.5s;
+}
+
+.social-ul .social-li:hover a {
+  font-size: 3em;
+  filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+
+.social-ul .social-li:hover {
+  z-index: 10000;
+  transform: scale(0.75);
+}
+
+.social-ul .social-li::before {
+  content: '';
+  position: absolute;
+  inset: 30px;
+  box-shadow: 0 0 0 10px var(--clr),
+    0 0 0 20px var(--bg),
+    0 0 0 22px var(--clr);
+  transition: 0.5s;
+}
+
+.social-ul .social-li::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--bg);
+  transform: rotate(45deg);
+}
+
+.social-ul .social-li:hover:before {
+  inset: 0px;
+}
+
+.truckersmp {
+  width: 40px;
+  height: 50px;
+}
+
+
+/* socials */
 /*Welcome Header */
 
 
@@ -4844,7 +4911,11 @@ cursor: pointer;
 
 /* New Client {what they say about us} */
 
-
+.our-partners {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
 
 /* New Client {what they say about us} */
 
@@ -4878,7 +4949,7 @@ cursor: pointer;
 }
 
 .testimonials-3col .t-item blockquote, .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404, .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404, .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p, .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p {
-  color: #999;
+  color: #000a18;
 }
 
 .testimonials-3col .t-item blockquote p, .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 p, .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 p, .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p p, .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p p {
