@@ -3280,142 +3280,48 @@ fieldset[disabled] .form-control:hover {
 
 /* ---- Navbar Utility ---- */
 
-/* Language */
-.nav-wrapper-lang {
+.content-slide h3 {
+  font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: transparent;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex: 1;
+  z-index: 100;
+  font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: #5dc0e1;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.navbar a {
+  font-size: 1.7rem;
   color: #000a18;
-  letter-spacing: 0.1rem;
-  transition: all 0.5s ease;
-  font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1.3rem;
-  &:hover {
-    color: #5dc0e1;
-    background: rgba(0,10,24,0.8);
-    transition: all 0.5s ease;
-  }
+  font-weight: 500;
+  margin-left: 3.5rem;
+  transition: .3s;
 }
 
-.sl-nav {
-  display: grid;
-  gap: 0.5;
-  align-items: center;
-  font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-}
-
-.sl-nav:hover {
+.navbar a:hover,
+.navbar a.active {
   color: #5dc0e1;
 }
 
-.sl-nav ul {
-  margin:0;
-  padding:0;
-  list-style: none;
-  position: relative;
-  display: inline-block;
-}
-.sl-nav li {
-  cursor: pointer;
-  padding-bottom:10px;
-  font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-}
-.sl-nav li ul {
-  display: none;
-}
-.sl-nav li:hover ul {
-  position: absolute;
-  top:29px;
-  right:-15px;
-  display: block;
-  background: transparent;
-  width: 120px;
-  padding-top: 0px;
-  z-index: 1;
-  border-radius:5px;
-  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-}
-.sl-nav li:hover .triangle {
-  position: absolute;
-  overflow:hidden;
-  background: transparent;
-}
-.sl-nav li:hover .triangle:after {
-  content: '';
-  transform: rotate(45deg) translateY(0px) translatex(10px);
-  height: 15px;
-  background: transparent;
-  border-radius:2px 0px 0px 0px;
-  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-}
-.sl-nav li ul li {
-  position: relative;
-  text-align: left;
-  background: transparent;
-  padding: 15px 15px;
-  padding-bottom:0;
-  z-index: 2;
-  font-size: 15px;
-  color: #3c3c3c;
-}
-.sl-nav li ul li:last-of-type {
-  padding-bottom: 15px;
-}
-.sl-nav li ul li span {
-  padding-left: 5px;
-}
-.sl-nav li ul li span:hover, .sl-nav li ul li span.active {
-  color: #5dc0e1;
-}
-.sl-flag {
-  display: inline-block;
-  box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
-  width: 15px;
-  height: 15px;
-  background: #aaa;
-  border-radius: 50%;
-  position: relative;
-  top: 2px;
-  overflow: hidden;
-}
-.flag-de {
-background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTM0A1t6AAAAPUlEQVQ4T+3HMQ0AIBTE0NOHM8x9B7hgh71bIWGieUvze1m7kHGBr/AVvsJX+EpmP5dV5/gKX+ErfIUvVDYcX2NMxQC8PAAAAABJRU5ErkJggg==');
-  background-size: cover;
-  background-position: center center;
-}
-.flag-usa {
-  background-size: cover;
-  background-position: center center;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTM0A1t6AAABhUlEQVQ4T2Ows82PjGixsc4LD2tysC/09Kjw8622tyuICG8u0w/cpGSCBzF4e1VmZkzw9anOzOj38a4KCW4IC22ECHYk1l9tn4gHMeTlTnZxLikvm+XiUpKW2hvgX+vnV5OVOQEoOGfOtv94AYOzU3Fd7XxHh6Lq6rlurqUx0W0J8Z1AnbW18yotonaYuOJBDBXls4A+bGpaBCTz86YEBtQCvVBSPAPIbY0oP1/aiAcxABU1Ny+2tclvbFjo5FgUF9uenNwNDLnmpkWEnV1TPRcY1O1tS4H6i4umA/0MDK2K8tlAwRqHpP1uoXgQKKraWpcClTY3LQZaCLQ5NaUX5OaWJY3++SeTC/AgBmA4AXUClUJs9ver8fKsAAYEUJCws4G21dXNB1oFdD/Qz8DQTk4C+bm2dn6DZ9bRiDQ8iAEYt8CoBpK5YBIYw0AEEZwSXX4oMB4PYoC6gCzAcDqrjGzEsMfen2xEmbMv1rSTjRi26dqRjShz9o2+6WQjBrSShQSkZAIADvW/HLrLY6cAAAAASUVORK5CYII=');
-}
-/* Language */
 
 
-.navbar-trans {
-  border-bottom: none;
-  background: transparent;
-  -webkit-transition: background 0.3s;
-          transition: background 0.3s;
-}
 
-.navbar-trans .navbar-logo {
-  content: url(../images/logo-light.png);
-}
-
-.navbar-trans .navbar-logo-dark {
-  content: url(../images/logo.png);
-}
-
-
-/* ---- Navbar Utility ---- */
-.bg-solid-white {
-  background: #fff !important;
-}
-
-.bg-solid-dark {
-  background: #111;
-}
 
 /* --------------------------------------------------
 	9.0 Feature
@@ -4676,108 +4582,13 @@ cursor: pointer;
   color: #fff;
 }
 
-
-
-/* New Division Section */
-
-/* Old Circles
-.card--display {
-  text-align: center;
-}
-
-.card-container {
-  flex: 300px;
-  margin: 10px;
-}
-
-.cardZ {
-  margin-top: 100px;
-  padding: 23px;
-  backdrop-filter: blur(2px);
-}
-
-.card-container .cardZ {
-  font-weight: bold;
-  position: relative;
-  width: 100%;
-
-}
-.card-container .cardZ a {
-  padding: 10px;
-  width: 100%;
-  height: 500px;
-  border: 2px solid #5dc0e1;
-  background: transparent;
-  text-decoration: none;
-  color: white;
-  display: block;
-  transition: 0.45s ease;
-}
-
-.card-container .cardZ a:hover {
-  border-color: #5bc0eb;
-}
-.card-container .cardZ a:hover .card--display {
-  display: inline;
-}
-.card-container .cardZ a:hover .card--hover {
-  display: inline;
-}
-.card-container .cardZ a .card--display i {
-  font-size: 60px;
-  margin-top: 200px;
-}
-
-.card-container .cardZ a .card--display h2 {
-  margin: 12px 0 0;
-  margin-bottom: 10px;
-}
-
-.card-container .cardZ a .card--hover h2 {
-  margin: 20px 0;
-}
-.card-container .cardZ a .card--hover p {
-  font-weight: normal;
-  line-height: 1.5;
-}
-.card-container .cardZ a .card--hover p.linkZ {
-  margin: 20px 0 0;
-  font-weight: bold;
-  color: #5bc0eb;
-}
-.card-container .cardZ .card--border {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 20;
-  z-index: -1;
-}
-.card-container .cardZ.card--dark a {
-  color: white;
-  background-color: transparent;
-  border-color: #5dc0e1;
-}
-.card-container .cardZ.card--dark a .card--hover .linkZ {
-  color: #fde74c;
-}
-
-.icon-division {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.division-img {
-  width: 90px;
-  height: 90px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-*/
-
 /* New Circles */
 
+/* TruckersHub Button */
+
+
+
+/* TruckersHub Button */
 
 .count-wrapper{
   display: flex;

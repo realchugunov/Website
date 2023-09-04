@@ -4,9 +4,9 @@ window.addEventListener('DOMContentLoaded', () => {
 		entries.forEach(entry => {
 			const id = entry.target.getAttribute('id');
 			if (entry.intersectionRatio > 0) {
-				document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+				document.querySelector(`header`).parentElement.classList.add('active');
 			} else {
-				document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+				document.querySelector(`header`).parentElement.classList.remove('active');
 			}
 		});
 	});
@@ -17,3 +17,4 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 	
 });
+
