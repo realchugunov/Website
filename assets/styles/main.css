@@ -242,7 +242,81 @@ hr {
   background: #111;
 }
 
-/* New Navigate Bar*/
+/* TruckersHub - Button */
+
+.cssbuttons-io-button {
+  background: #000a18;
+  color: #5dc0e1;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #000a18;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .icon {
+  background: #5dc0e1;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #000a18;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #000a18;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+
+
+/* TruckersHub - Button */
+
+.container-nav {
+  display: flex;
+  justify-content: end;
+}
+
+.stride-nav-logo {
+  height: 50px;
+  width: 270px;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 16px;
+  margin-right: 400px;
+}
 
 
 a {
@@ -261,8 +335,7 @@ text-decoration: none;
   background: transparent;
   text-align: center;
   padding: 0 2em;
-  margin-top: 16px;
-  margin-left: 100px;
+  margin-top: 20px;
   h1 {
       font-size: 5rem;
       margin: 0;
@@ -279,7 +352,7 @@ text-decoration: none;
 .et-hero-tabs-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: baseline;
   width: 100%;
   height: 50px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -1072,7 +1145,6 @@ text-decoration: none;
   height: 70vh;
   width: 100%;
   padding: 40px 0;
-  background: #ddd;
 }
 
 .about-us-pic {
@@ -1210,7 +1282,6 @@ span{
 .sec-heading {
   text-align: center;
   margin-top: 10vh;
-
 }
 
 .sec-heading2 {
@@ -2742,8 +2813,9 @@ fieldset[disabled] .form-control:hover {
 /* --------------------------------------------------
 	7.0 Footers
 -------------------------------------------------- */
+
 .copyright {
-  background: #222;
+  background: #5dc0e1;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -2756,7 +2828,12 @@ fieldset[disabled] .form-control:hover {
 }
 
 .copyright small a:hover {
-  color: #ececec;
+  color: #000a18;
+}
+
+.copyright small:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .copyright small a:focus {
@@ -2764,7 +2841,7 @@ fieldset[disabled] .form-control:hover {
 }
 
 .copyright .to-the-top {
-  color: #777;
+  color: #000a18;
 }
 
 .copyright .to-the-top i {
@@ -8404,7 +8481,9 @@ form .input-error-2:focus {
   height: 100vh;
   top: 0;
   left: 0;
-  background: rgba(236, 236, 236, 0.6);
+  background: rgba(236, 236, 236, 0.2);
+  backdrop-filter: blur(2px);
+  
 }
 
 .main-demo-hero .hero-content-wrapper, .fs-video-hero .hero-content-wrapper, .fw-video-hero .hero-content-wrapper, .text-slider-hero .hero-content-wrapper, .freelancer-hero .hero-content-wrapper, .agency2-hero .hero-content-wrapper, .animated-hero .hero-content-wrapper, .web-app-hero .hero-content-wrapper {
