@@ -4552,7 +4552,6 @@ cursor: pointer;
 
 .container-slide .card-slide .face.face2 {
   position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4564,6 +4563,7 @@ cursor: pointer;
 
 .container-slide .card-slide:hover .face.face2 {
   transform: translateY(0);
+  background-color: #000a18;
 }
 
 .container-slide .card-slide .face.face2 .content-slide p {
