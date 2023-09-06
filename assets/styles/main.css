@@ -1282,6 +1282,7 @@ span{
 .sec-heading {
   text-align: center;
   margin-top: 10vh;
+  margin-bottom: 5px;
 }
 
 .sec-heading2 {
@@ -3289,14 +3290,15 @@ fieldset[disabled] .form-control:hover {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 9%;
+  padding: 3rem 9%;
   background: transparent;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
   z-index: 100;
   font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-  
+
+
 }
 
 .logo {
@@ -3319,7 +3321,10 @@ fieldset[disabled] .form-control:hover {
   color: #5dc0e1;
 }
 
-
+.scrolled {
+  background-color: white;
+  padding-bottom: 1px;
+}
 
 
 
@@ -4547,7 +4552,7 @@ cursor: pointer;
 
 .container-slide .card-slide .face.face2 {
   position: relative;
-  background: #000a18;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4977,7 +4982,7 @@ cursor: pointer;
 
 .testimonials-3col .t-item blockquote footer cite, .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite, .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite, .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer cite, .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite {
   font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
-  color: #777;
+  color: #5dc0e1;
 }
 
 .testimonials-3col .t-item blockquote footer cite span, .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite span, .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite span, .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer cite span, .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite span {
@@ -4989,7 +4994,7 @@ cursor: pointer;
 
 .testimonials-3col .t-item .t-icon {
   font-size: 32px;
-  color: #999;
+  color: #5dc0e1;
 }
 
 .testimonials-3col .t-clients {
@@ -8124,13 +8129,14 @@ form .input-error-2:focus {
 	20.0 Hero
 -------------------------------------------------- */
 /* ---- 20.01 Preloader ---- */
+
 .preloader {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #111;
+  background-color: #5dc0e1;
   z-index: 9999;
 }
 
@@ -10667,4 +10673,89 @@ form .input-error-2:focus {
   background: #f8f8f8;
 }
 
+/* Team Members */
+
+.title-members {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-members  h1 {
+  color: #5dc0e1;
+}
+
+.team-members {
+  background-color: white;
+  height: 40vh;
+  width: 100%;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 3.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-members {
+  width: 210px;
+  height: 280px;
+  background: #5dc0e1;
+  border-radius: 12px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition-duration: .5s;
+}
+
+.profileImage {
+  background: linear-gradient(to right,rgb(54, 54, 54),rgb(32, 32, 32));
+  margin-top: 20px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.329);
+}
+
+.textContainer {
+  width: 100%;
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name-members {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #000a18;
+  letter-spacing: 0.5px;
+}
+
+.profile-members {
+  font-size: 0.84em;
+  color: #000a18;
+  letter-spacing: 0.2px;
+}
+
+.card-members:hover {
+  background-color: #000a18;
+  transition-duration: .5s;
+}
+
+
+.card-members:hover p {
+  color: #5dc0e1;
+}
+
+.members-avatar {
+  width: 170px;
+  border-radius: 85px;
+
+}
 /*# sourceMappingURL=main.css.map */
