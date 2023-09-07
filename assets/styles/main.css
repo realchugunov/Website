@@ -4609,7 +4609,7 @@ cursor: pointer;
 
 .circles-counters, .circles-counters-dark-bg {
   position: relative;
-  background: #ccc url(/assets/images/divisionMain.png);
+  background: #ccc url(/assets/images/heavy-haul-division.png);
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 120px;
@@ -10679,106 +10679,20 @@ form .input-error-2:focus {
   background: #f8f8f8;
 }
 
-/* Old Team Members */
-/*
-.title-members {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.team-members  h1 {
-  color: #5dc0e1;
-}
-
-.team-members {
-  background-color: white;
-  height: 60vh;
-  width: 100%;
-  margin-bottom: 100px;
-  display: flex;
-  flex-direction: row;
-  gap: 3.5rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-members {
-  width: 210px;
-  height: 280px;
-  background: #5dc0e1;
-  border-radius: 12px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  transition-duration: .5s;
-}
-
-.profileImage {
-  background: linear-gradient(to right,rgb(54, 54, 54),rgb(32, 32, 32));
-  margin-top: 20px;
-  width: 170px;
-  height: 170px;
-  border-radius: 50%;
-  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.329);
-}
-
-.textContainer {
-  width: 100%;
-  text-align: left;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.name-members {
-  font-size: 0.9em;
-  font-weight: 600;
-  color: #000a18;
-  letter-spacing: 0.5px;
-}
-
-.profile-members {
-  font-size: 0.84em;
-  color: #000a18;
-  letter-spacing: 0.2px;
-}
-
-.card-members:hover {
-  background-color: #000a18;
-  transition-duration: .5s;
-}
-
-
-.card-members:hover p {
-  color: #5dc0e1;
-}
-
-.members-avatar {
-  width: 170px;
-  border-radius: 85px;
-
-}*/
-/* Old Team Members */
-
 
 .snip1336 {
   font-family: 'Roboto', Arial, sans-serif;
   position: relative;
   overflow: hidden;
-  margin: 10px;
-  min-width: 230px;
-  max-width: 315px;
+  margin: 15px;
+  min-width: 240px;
+  max-width: 345px;
   width: 100%;
   color: #ffffff;
   text-align: left;
   line-height: 1.4em;
   background-color: #141414;
+  height: 42vh;
 }
 .snip1336 * {
   -webkit-box-sizing: border-box;
@@ -10796,6 +10710,7 @@ form .input-error-2:focus {
   background-color: #000a18;
   padding: 25px;
   position: relative;
+  height: 270px;
 }
 .snip1336 figcaption:before {
   position: absolute;
@@ -10810,8 +10725,8 @@ form .input-error-2:focus {
 }
 .snip1336 figcaption a {
   padding: 5px;
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  border: 1px solid #5dc0e1;
+  color: #5dc0e1;
   font-size: 0.7em;
   text-transform: uppercase;
   margin: 10px 0;
@@ -10844,14 +10759,17 @@ form .input-error-2:focus {
 .snip1336 h2 {
   margin: 0 0 5px;
   font-weight: 300;
+  color: #5dc0e1;
+  margin-top: 6px;
 }
 .snip1336 h2 span {
   display: block;
   font-size: 0.5em;
   color: #2980b9;
 }
+
 .snip1336 p {
-  margin: 0 0 10px;
+  margin-top: 30px;
   font-size: 0.8em;
   letter-spacing: 1px;
   opacity: 0.8;
@@ -10869,5 +10787,11 @@ form .input-error-2:focus {
   display: flex;
   text-align: center;
   justify-content: center;
+}
+
+.founder-class {
+  display: flex;
+  justify-content: center;
+  margin-top: 6vh;
 }
 /*# sourceMappingURL=main.css.map */
