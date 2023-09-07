@@ -5021,6 +5021,7 @@ cursor: pointer;
 }
 
 /* ---- 12.3 Clients List ---- */
+
 .clients-list-parallax, .clients-list-minimal, .clients-list-gray {
   background: url(../images/street.jpg);
   background-size: cover;
@@ -8333,9 +8334,10 @@ form .input-error-2:focus {
 }
 
 .main-demo-hero .hero-content-wrapper .hero-content .hero-subheading, .fs-video-hero .hero-content-wrapper .hero-content .hero-subheading, .fw-video-hero .hero-content-wrapper .hero-content .hero-subheading, .text-slider-hero .hero-content-wrapper .hero-content .hero-subheading, .freelancer-hero .hero-content-wrapper .hero-content .hero-subheading, .agency2-hero .hero-content-wrapper .hero-content .hero-subheading, .animated-hero .hero-content-wrapper .hero-content .hero-subheading, .web-app-hero .hero-content-wrapper .hero-content .hero-subheading {
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 20px;
   color: #56c0e1;
+  margin-left: 40px;
 }
 
 /* ---- 20.2 Full Screen Slider ---- */
@@ -10693,7 +10695,9 @@ form .input-error-2:focus {
   line-height: 1.4em;
   background-color: #141414;
   height: 42vh;
+  border-radius: 20px;
 }
+
 .snip1336 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -10776,11 +10780,12 @@ form .input-error-2:focus {
 }
 
 .team-members-stride {
-  height: 80vh;
+  height: 60vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .title-members {
