@@ -4530,10 +4530,11 @@ cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
 }
 
 .container-slide {
-  width: 1600px;
+  width: 85%;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -4625,18 +4626,12 @@ cursor: pointer;
   color: #fff;
 }
 
-/* New Circles */
-
-/* TruckersHub Button */
-
-
-
-/* TruckersHub Button */
 
 .count-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
 
 .circles-counters, .circles-counters-dark-bg {
