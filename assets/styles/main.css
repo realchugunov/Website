@@ -1306,11 +1306,6 @@ span{
   border-radius: 40px;
 }
 
-.ad-img-container:hover {
-  transform: scale(1.4);
-  transition: 2s ease;
-}
-
 .advertise-hub-container p {
   font-size: 20px;
   text-align: baseline;
