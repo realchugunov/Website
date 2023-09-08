@@ -197,6 +197,13 @@ _____________________________________________________
 /* --------------------------------------------------
 	0.2 Utility
 -------------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
 hr {
   margin-top: 0;
   margin-bottom: 0;
@@ -1298,6 +1305,7 @@ span{
 .advertise-img {
   width: 700px;
   height: 400px;
+  cursor: pointer;
 }
 
 .ad-img-container {
@@ -2362,13 +2370,13 @@ input[class="btn-ghost"]:after {
 }
 
 .btn-light:visited {
-  color: #111;
+  color: #5dc0e1;
   background: #ececec;
 }
 
 .btn-light:visited:hover {
-  color: #111;
-  background: #bebebe;
+  color: #5dc0e1;
+  background: #000a18;
 }
 
 .btn-light:hover {
@@ -3319,6 +3327,8 @@ fieldset[disabled] .form-control:hover {
 
 /* ---- Navbar Utility ---- */
 
+
+
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
@@ -3337,7 +3347,6 @@ fieldset[disabled] .form-control:hover {
   background: transparent;
   display: flex;
   justify-content: space-between;
-
   z-index: 100;
   font-family: 'Inter', sans-serif;
 
@@ -4530,20 +4539,21 @@ cursor: pointer;
 
 /* New Division Section */
 
-
 .image-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  max-width: 100%;
+  justify-content: center
 }
 
+
 .container-slide {
-  width: 85%;
+  width: 170vh;
   position: relative;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  align-items: center;
+  margin-left: 160px;
 }
 
 .container-slide .card-slide  {
@@ -4636,7 +4646,6 @@ cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 
 .circles-counters, .circles-counters-dark-bg {
@@ -4660,7 +4669,6 @@ cursor: pointer;
 .circles-counters .circle-item, .circles-counters-dark-bg .circle-item {
   padding-top: 100px;
   text-align: center;
-  
 }
 
 .circles-counters .circle-item .chart, .circles-counters-dark-bg .circle-item .chart {
@@ -8018,7 +8026,7 @@ form .input-error-2:focus {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: #cd5b3c;
+  background: #5dc0e1;
 }
 
 .wrapper-404 .content-wrapper {
@@ -8033,10 +8041,10 @@ form .input-error-2:focus {
 
 .wrapper-404 .content-wrapper .lead-wrapper h1, .wrapper-404 .comingsoon .content-wrapper .lead-wrapper .content-inner .cs-timer .item .nbr-timer, .comingsoon .wrapper-404 .content-wrapper .lead-wrapper .content-inner .cs-timer .item .nbr-timer, .wrapper-404 .comingsoon .content-wrapper .content-inner .cs-timer .item .lead-wrapper .nbr-timer, .comingsoon .wrapper-404 .content-wrapper .content-inner .cs-timer .item .lead-wrapper .nbr-timer {
   padding-right: 30px;
-  border-right: 3px solid #ececec;
+  border-right: 3px solid #000a18;
   font-size: 120px;
   letter-spacing: 20px;
-  color: #ececec;
+  color: #000a18;
 }
 
 .wrapper-404 .content-wrapper .info-wrapper {
@@ -8048,7 +8056,7 @@ form .input-error-2:focus {
 }
 
 .wrapper-404 .content-wrapper .info-wrapper .info-404 {
-  color: #ececec;
+  color: #000a18;
 }
 
 .wrapper-404 .content-wrapper .links-404 {
@@ -8832,7 +8840,7 @@ form .input-error-2:focus {
 
 /* ---- 20.9 Animated Heading ---- */
 .animated-hero {
-  background: url(../images/hero/back-1.jpg);
+  background: url(../images/backgroundStrideTwin.png);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
