@@ -3327,7 +3327,24 @@ fieldset[disabled] .form-control:hover {
 
 /* ---- Navbar Utility ---- */
 
+#header {
+    padding: 5px 5;
+    line-height: 0.2;
+    transition: background-color 0.3s, padding 0.3s;
 
+}
+
+#header.sticky {
+
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#header.white {
+  background-color: #fff;
+    color: #333;
+}
 
 .navbar-default {
   background-color: transparent;
@@ -3374,9 +3391,10 @@ fieldset[disabled] .form-control:hover {
 }
 
 .scrolled {
-  background-color: white;
   padding-bottom: 1px;
 }
+
+
 
 
 
