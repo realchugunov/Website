@@ -61,9 +61,9 @@
 		$(window).scroll(function(){
 			
 			if ($(window).scrollTop() > 20) {
-				$('nav').removeClass('navbar-trans', 300);
-				$('nav').removeClass('navbar-trans-dark');
-				$('nav').addClass('navbar-small', 300);
+				$('header').removeClass('navbar-trans', 300);
+				$('header').removeClass('navbar-trans-dark');
+				$('header').addClass('navbar-small', 300);
 			}
 			else {
 				$('nav:not(.mobile-nav)').addClass('navbar-trans', 300);
@@ -74,30 +74,29 @@
 				}
 			}
 
-			$('nav:not(.navbar-fixed-top)').removeClass('navbar-trans navbar-small navbar-trans-dark');
-
+			$('nav:not(.scrolled)').removeClass('navbar-trans navbar-small navbar-trans-dark');
 		});
 
 
 		// Nav on mobile screens
 		$(window).resize(function() {
 	        if ($(window).width() <= 1259) {
-				$('nav').addClass('mobile-nav');		        
+				$('header').addClass('mobile-nav');		        
 		    } else {
-		    	$('nav').removeClass('mobile-nav');
+		    	$('header').removeClass('mobile-nav');
 		    }
 
-    		if ($('nav').hasClass('mobile-nav')) {
-    			$('nav').removeClass('navbar-trans');
-    			$('nav').removeClass('navbar-trans-dark');
+    		if ($('header').hasClass('mobile-nav')) {
+    			$('header').removeClass('navbar-trans');
+    			$('header').removeClass('navbar-trans-dark');
     		} else {
     			if ($(window).width() >= 1259 && $(window).top) {
-    				$('nav').addClass('navbar-trans');
+    				$('header').addClass('navbar-trans');
     			}
     		}
 
     		// Remove dropdown open on hover for small screens
-    		if ($('nav').hasClass('mobile-nav')) {
+    		if ($('header').hasClass('mobile-nav')) {
 
     			$('.dropdown-toggle').on('mouseover', function(e){    
     			        e.preventDefault();
@@ -111,9 +110,9 @@
     		// Close mobile menu when clicked link
     		// var isNotDropdown = $('nav:not(.mobile-nav)');
 
-    		if (!$('.nav a').hasClass('dropdown-toggle')) {
+    		if (!$('.header a').hasClass('dropdown-toggle')) {
 
-    			$('.nav a').on('click', function(){ 
+    			$('.header a').on('click', function(){ 
 			        if($('.navbar-toggle').css('display') !='none'){
 			            $(".navbar-toggle").trigger( "click" );
 			        }
@@ -137,7 +136,7 @@
 
 	function initScroller () {
 
-		$('#navbar').localScroll({
+		$('#header').localScroll({
 			easing: 'easeInOutExpo'
 		});
 
@@ -147,13 +146,10 @@
 	} // initScroller
 
 
-
-
 /* --------------------------------------------------
 	Parallax
 -------------------------------------------------- */
 
-	
 	function initParallax () {
 
 		var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
@@ -169,7 +165,6 @@
 			$(".login-2").parallax("50%", 0.2);
 		}		
 	}
-
 
 
 /* --------------------------------------------------
@@ -421,19 +416,6 @@
 			]
 		});
 
-		// Portfolio Single Slider
-		$('.single-img-slider').slick({
-			autoplay: true,
-			autoplaySpeed: 4000,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			adaptiveHeight: true,
-			dots: false,
-			arrows: true,
-			prevArrow: '<button type="button" class="slider-nav sl-prev"><span class="linea-arrows-slim-left"></span></button>',
-			nextArrow: '<button type="button" class="slider-nav sl-next"><span class="linea-arrows-slim-right"></span></button>',
-		});
-
 		// Centered Gallery
 		$('.centered-gallery').slick({
 			centerMode: true,
@@ -503,105 +485,7 @@
 			autoplaySpeed: 4000,
 		});
 
-		// Shop Product Slider
-		$('.shop-p-slider').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			adaptiveHeight: true,
-			speed: 300,
-			// fade: false,
-			dots: false,
-			arrows: true,
-			prevArrow: '<button type="button" class="shop-p-slider-nav shop-p-slider-nav-left"><span class="linea-arrows-slim-left"></span></button>',
-			nextArrow: '<button type="button" class="shop-p-slider-nav shop-p-slider-nav-right"><span class="linea-arrows-slim-right"></span></button>',
-			autoplay: false,
-		});
-
-		// Shop Product Single - Slider
-		$('.prod_single_img_slider').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			adaptiveHeight: true,
-			speed: 300,
-			// fade: false,
-			infinite: true,
-			dots: true,
-			arrows: true,
-			prevArrow: '<button type="button" class="shop-p-slider-nav shop-p-slider-nav-left"><span class="linea-arrows-slim-left"></span></button>',
-			nextArrow: '<button type="button" class="shop-p-slider-nav shop-p-slider-nav-right"><span class="linea-arrows-slim-right"></span></button>',
-			autoplay: false,
-			accessibility: false,
-			customPaging: function (slider, i) {
-	            return '<a href="#">' + $('.prod_single_thumbs_slider li:nth-child(' + (i + 1) + ')').html() + '</a>';
-	        }
-		});
-
 	} // initSliders
-
-
-
-/* --------------------------------------------------
-	Portfolio
--------------------------------------------------- */
-	
-	function initPortfolio () {
-
-		// Filters
-		$('.portfolio-filters a').click(function (e) {
-			  e.preventDefault();
-
-			  $('li').removeClass('active');
-			  $(this).parent().addClass('active');
-		});
-
-		
-		// Full Width Gallery (3 columns)
-		function pfolio3colFW () {
-			
-			var $container = $('#pfolio');
-			// init
-			$container.isotope({
-				// options
-				itemSelector: '.portfolio-item',
-			});
-
-			// Filter items
-			$('#pfolio-filters').on( 'click', 'a', function() {
-				var filterValue = $(this).attr('data-filter');
-				$container.isotope({ filter: filterValue });
-			});
-
-		} // fwNogap3col
-
-
-		function pfolioMasonry () {
-			
-			var $container = $('.pfolio-items');
-			// init
-			$container.isotope({
-				// options
-				itemSelector: '.p-item',
-			    percentPosition: true,
-			    layoutMode: 'packery',
-			    masonry: {
-			      columnWidth: '.grid-sizer'
-			    }				
-			});
-
-			// Filter items
-			$('#pfolio-filters').on( 'click', 'a', function() {
-				var filterValue = $(this).attr('data-filter');
-				$container.isotope({ filter: filterValue });
-			});
-
-		}
-
-
-		pfolio3colFW();
-		pfolioMasonry();
-
-	} // initPortfolio
-
 
 
 /* --------------------------------------------------
@@ -638,27 +522,7 @@
 
 		}
 
-		// Video Lightbox
-		var hasVideoPopup = $('a').hasClass('popup-video');
-
-		if (hasVideoPopup) {
-
-			$('.popup-video').magnificPopup({
-	          	disableOn: 700, 
-	         	type: 'iframe',
-	          	mainClass: 'mfp-fade',
-	          	removalDelay: 160,
-	          	preloader: false,
-
-	          	fixedContentPos: false
-			});
-
-		}
-
 	} // initGallery
-
-
-
 
 /* --------------------------------------------------
 	Blog Masonry Layout
@@ -674,27 +538,6 @@
 				percentPosition: true
 			});
 	}
-	
-
-
-
-/* --------------------------------------------------
-  Contact Pages
--------------------------------------------------- */
-
-	$('.show-map').on('click', function(e){
-	  e.preventDefault();
-	  $('.contact-info-wrapper').toggleClass('map-open');
-	  $('.show-info-link').toggleClass('info-open');
-	});
-
-	$('.show-info-link').on('click', function(e){
-	  e.preventDefault();
-	  $('.contact-info-wrapper').toggleClass('map-open');
-	  $(this).toggleClass('info-open');
-	});
-
-
 
 /* --------------------------------------------------
 	Animation
@@ -705,29 +548,6 @@
 		new WOW().init();
 
 	}
-
-
-
-
-/* --------------------------------------------------
-	Video Background
--------------------------------------------------- */
-
-	function initVideoBg () {
-
-		var hasBgVideo = $('#fs-video-one-bg').hasClass('player');
-		var hasFwBgVideo = $('#fw-video-one-bg').hasClass('player');
-		var hasSecBgVideo = $('#section-video').hasClass('player');
-
-		if (hasBgVideo || hasFwBgVideo || hasSecBgVideo) {
-
-			$('.player').YTPlayer();
-
-		}
-		
-
-	}
-
 
 
 /* --------------------------------------------------
@@ -761,103 +581,11 @@
 /* --------------------------------------------------
 	Shop Price Filter - (range slider)
 -------------------------------------------------- */
-	function initRangeSlider () {
-
-		$( "#shop-slider-range" ).slider({
-			range: true,
-			min: 100,
-			max: 750,
-			values: [ 121, 721 ], // starting values
-			slide: function( event, ui ) {
-				$( "#shop-slider-range-amount" ).val( "$" + ui.values[ 0 ] + " TO $" + ui.values[ 1 ] );
-			}
-		});
-		$( "#shop-slider-range-amount" ).val( "$" + $( "#shop-slider-range" ).slider( "values", 0 ) +
-			" TO $" + $( "#shop-slider-range" ).slider( "values", 1 ) );
-
-	} // initRangeSlider
-
-
 
 })(jQuery);
-
 
 
 /* --------------------------------------------------
 	Contact Form JS Validation & AJAX call 
 -------------------------------------------------- */
-$(function() {
 
-//	Regular Expressions
-var expEmail = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[_a-z0-9-]+(\.[_a-z0-9-]+)*(\.[a-z]{2,4})$/;
-var	expLettersOnly = /^[A-Za-z ]+$/;
-
-//	Checks if a field has the correct length
-function validateLength ( fieldValue, minLength ) {
-	return ( $.trim( fieldValue ).length > minLength );
-}
-
-//	Validate form on typing
-$( '.form-ajax' ).on( 'keyup', 'input.validate-locally', function() {
-	validateField( $(this) );
-});
-
-//	AJAX call
-$( '.form-ajax' ).submit(function(e) {
-	e.preventDefault();
-	var $this = $( this ),
-			action = $this.attr( 'action' );
-
-	// The AJAX requrest
-	$.post(
-			action,
-			$this.serialize(),
-			function( data ) {
-				$( '.ajax-message' ).html( data );
-			}
-	);
-});
-
-//	Validates the fileds
-function validateField ( field ) {
-	var errorText = "",
-			error = false,
-			value = field.val(),
-			siblings = field.siblings( ".alert-error" );
-
-	// Test the name field
-	if ( field.attr("name") === "name" ) {
-		if ( !validateLength( value, 2 ) ) {
-					error = true;
-					errorText += '<i class="fa fa-info-circle"></i> The name is too short!<br>';
-					$('input[name="name"]').addClass('input-error');
-		} else {
-			$('input[name="name"]').removeClass('input-error');
-		}
-
-		if ( !expLettersOnly.test( value ) ) {
-					error = true;
-					errorText += '<i class="fa fa-info-circle"></i> The name can contain only letters and spaces!<br>';
-					$('input[name="name"]').addClass('input-error-2');
-		} else {
-			$('input[name="name"]').removeClass('input-error-2');
-		}
-	}
-
-	// Test the email field
-	if ( field.attr("name") === "email" ) {
-		if ( !expEmail.test( value ) ) {
-					error = true;
-					errorText += '<i class="fa fa-info-circle"></i> Enter correct email address!<br>';
-					$('input[name="email"]').addClass('input-error');
-		} else {
-			$('input[name="email"]').removeClass('input-error');
-		}
-	}
-
-	// Display the errors
-	siblings.html( errorText );
-
-	}
-
-});

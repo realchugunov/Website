@@ -3319,6 +3319,11 @@ fieldset[disabled] .form-control:hover {
 
 /* ---- Navbar Utility ---- */
 
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
 .content-slide h3 {
   font-family: 'Inter', sans-serif;
 }
