@@ -4668,7 +4668,7 @@ cursor: pointer;
 
 .circles-counters, .circles-counters-dark-bg {
   position: relative;
-  background: #ccc url(/assets/images/heavy-haul-division.png);
+  background: #ccc url(./assets/images/heavy-haul-division.png);
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 120px;
