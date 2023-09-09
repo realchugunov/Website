@@ -535,9 +535,9 @@ text-decoration: none;
   transition: 0.3s all ease-in-out;
 }
 
-.warehouse-stride {
-  width: 80px;
-  height: 80px;
+.warehouse-size {
+  width: 93px;
+  height: 93px;
 }
 
 
