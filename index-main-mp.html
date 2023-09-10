@@ -38,6 +38,7 @@
         <!-- JS -->
         <script src="./assets/js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="./assets/js/nav.js"></script>
+        <script src="./assets/js/img-slide-anim.js"></script>
         
     </head>
       <body id="page-top">
@@ -64,7 +65,7 @@
         <!-- ========== Navigation ========== -->
 
         <header class="header scrolled" id="header">
-          <a href="https://truckersmp.com/vtc/38299" class="logo">STRIDE HAULAGE</a>
+          <a href="https://truckersmp.com/vtc/38299" target="_blank" class="logo">STRIDE HAULAGE</a>
 
           <nav class="navbar navbar-default mega navbar-trans navbar-trans-dark trans-helper" id="navbar">
             <a href="#home" class="active">HOME</a>
@@ -88,7 +89,7 @@
                 
                 <h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s">Striving<br> to Deliver</h1>
                 <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s"><b>Join Us Right Now!</b></h4>
-                <a href="https://truckersmp.com/vtc/38299" target="_blank" class="btn wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Apply</a>
+                <a href="#reg-process" target="_blank" class="btn wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Apply</a>
                 <a href="https://discord.com/invite/2X5ev6g994" target="_blank" class="btn wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Discord</a>
               </div>
             </div>
@@ -417,7 +418,7 @@
                     </div>
                     <div class="ag-offer_hidden-item">
                       <p class="ag-offer_text">
-                        Are you interested in a Realistic trucking Experience? Then you should consider joining one of our many Divisions!
+                        Are you interested in a realistic trucking Experience? Then you should consider joining one of our many Divisions!
                       </p>
                     </div>
                   </li>
@@ -447,8 +448,8 @@
                     </div>
                     <div class="ag-offer_hidden-item">
                       <p class="ag-offer_text-last">
-                        You earn points by default simply by logging jobs. you earn 20 points per 100km/62 miles you drive. If you go above 100kmh your 
-                        points will be reduced by 100%= 10 points per 100km/62 miles.
+                        Compete against other drivers in different categories. Drive most miles, earn most money or get most points in our 
+                        own point system! You have plenty of challenges to go at!
                       </p>
                     </div>
                   </li>
@@ -469,13 +470,13 @@
 
               <!-- Item 2 -->
               <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s">
-                <span id="count-2" class="count-nbr">4,965,952</span>
+                <span id="count-2" class="count-nbr">9,036</span>
                 <span class="count-text">Deliveries</span>
               </div>
 
               <!-- Item 3 -->
               <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s">
-                <span id="count-3" class="count-nbr">9,036</span>
+                <span id="count-3" class="count-nbr">4,965,952</span>
                 <span class="count-text">Distance</span>
               </div>
 
@@ -534,7 +535,7 @@
             <!-- CTA Button -->
             <div class="row ws-m">
               <div class="text-center">
-                <a href="https://truckersmp.com/vtc/38299" class="btn">APPLY</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScLHm2tCziTr7K3k6gyWTLvsg-TSp7DRrFwaJtz2nJPY2YFLw/viewform" class="btn">APPLY</a>
               </div>
             </div><!-- / .row -->
         </section><!-- / .container -->
@@ -542,23 +543,42 @@
 
 
         <!-- ========== Featured Projects ========== -->
-        <div class="container-fluid ft-hover-item">
-          <div class="row">
-            
-            <!-- Item 2 -->
-            <div class="ft-item ft-2 col-md-6">
-              <div class="bg-overlay">
+        <nav class="nav-for-slide">
+          <div class="next-slide"><a href="#">next</a></div>
+          <div class="prev-slide"><a href="#">prev</a></div>
+        </nav>
+      
+        <div class="container-slide-photo">
+      
+          <div class="hidden-slide">
+            <div class="box-slide active"></div>
+            <div class="box-slide"></div>
+            <div class="box-slide"></div>
+            <div class="box-slide"></div>
+            <div class="box-slide"></div>
+            <div class="box-slide"></div>
+            <div class="box-slide"></div>
+            <div class="box-slide"></div>
+            <div class="box-slide"></div>
+            <div class="box-slide"></div>
+            <div class="box-slide"></div>
+            <div class="box-slide"></div>
+          </div>
+      
+          <div class="text-slide active">
+          </div>
+          <div class="text-slide">
+          </div>
+          <div class="text-slide">
+          </div>
+      
+        </div>
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+        <script src="./assets/js/img-slide-anim.js"></script>
+      
 
-                <div class="content-wrapper">
-                  <a href="pages/portfolio/portfolio-single-1.html"><h3>Photography</h3></a>
-                  <p>If you want to see our pictures,<br> hover here!</p>
-                  <a href="https://truckersmp.com/vtc/38299/gallery" target="_blank" class="btn-ghost btn-ghost-light ft-button">Gallery</a>
-                </div>
-
-              </div><!-- / .bg-overlay -->
-            </div><!-- / .ft-item -->
-          </div><!-- / .row -->
-        </div><!-- / .container-fluid -->
 
     
         <!-- ========== Testimonials ========== -->

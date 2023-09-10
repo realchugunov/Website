@@ -2014,8 +2014,8 @@ mark {
 }
 
 ::selection {
-  color: #fff;
-  background: #17DA5B;
+  color: #5dc0e1;
+  background: #000a18;
 }
 
 /* ---- 1.1 Text ---- */
@@ -8644,6 +8644,129 @@ form .input-error-2:focus {
   margin-bottom: 20px;
   color: #999;
 }
+
+/* Photo Slide */
+
+.container-slide-photo {
+  width: 70vw;
+  height: 70vh;
+  position: relative;
+  margin: 0 auto;
+}
+
+.hidden-slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  background-color: #5dc0e1;
+}
+
+.box-slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+}
+.text-slide {
+  width: 250px;
+  height: 200px;
+  color: white;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.box-slide:nth-child(1) {
+  background-image: url(https://static.truckersmp.com/images/vtc/gallery/stride-haulage.1675897597.png);
+}
+.box-slide:nth-child(2) {
+  background-image: url(https://static.truckersmp.com/images/vtc/gallery/stride-haulage.1692175379.png);
+}
+.box-slide:nth-child(3) {
+  background-image: url(https://static.truckersmp.com/images/vtc/gallery/stride-haulage.1685811218.jpeg);
+}
+
+.box-slide:nth-child(4) {
+  background-image: url(https://static.truckersmp.com/images/vtc/gallery/stride-haulage.1673651287.jpeg)
+}
+
+.box-slide:nth-child(5) {
+  background-image: url(https://static.truckersmp.com/images/vtc/gallery/stride-haulage.1673653679.jpeg)
+}
+
+.box-slide:nth-child(6) {
+  background-image: url(../images/stride-solo-s4.png)
+}
+
+.box-slide:nth-child(7) {
+  background-image: url(../images/stride-dubble-convoy.png)
+}
+
+.box-slide:nth-child(8) {
+  background-image: url(https://static.truckersmp.com/images/vtc/gallery/stride-haulage.1674854466.jpeg);
+}
+
+.box-slide:nth-child(9) {
+  background-image: url(../images/stride-convoy-7.png);
+}
+
+.box-slide:nth-child(10) {
+  background-image: url(../images/ets2_20230119_182107_00.png);
+}
+
+.box-slide:nth-child(11) {
+  background-image: url(https://static.truckersmp.com/images/vtc/gallery/stride-haulage.1692174884.png);
+}
+
+.box-slide:nth-child(12) {
+  background-image: url(https://static.truckersmp.com/images/vtc/gallery/stride-haulage.1673651201.jpeg)
+}
+
+.nav-for-slide {
+  position: relative;
+  top: 50%;
+  width: 100%;
+}
+.next-slide {
+  transform: rotate(90deg);
+  letter-spacing: 20px;
+  position: absolute;
+  width: 100px;
+  top: 40vh;
+  right: 0;
+}
+
+.prev-slide {
+  transform: rotate(-90deg);
+  letter-spacing: 20px;
+  position: absolute;
+  width: 100px;
+  top: 40vh;
+  left: 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 8pt;
+  background-color: white;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.nav-for-slide a {
+  color: #5dc0e1;
+  font-weight: 560;
+}
+
+/* Photo Slide End */
+
+
 
 /* ---- 20.5 Full Width Video ---- */
 .fw-video-hero {
