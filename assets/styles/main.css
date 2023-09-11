@@ -5378,7 +5378,7 @@ cursor: pointer;
 .slider {
   width: 100%;
   margin-top: 5vh;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
 }
 
 .slider input {
@@ -5521,7 +5521,7 @@ cursor: pointer;
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 
 .testimonials-title h1 {
@@ -8949,7 +8949,7 @@ form .input-error-2:focus {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 34px;
   margin-top: 120px;
   font-size: 13px;
 }
@@ -8959,7 +8959,6 @@ form .input-error-2:focus {
 }
 
 /* Photo Slide End */
-
 
 
 /* ---- 20.5 Full Width Video ---- */
