@@ -3604,6 +3604,11 @@ cursor: pointer;
 }
 
 /* ---- 9.3 Feature - Steps Numbers ---- */
+.ws-s h2 {
+  font-weight: 600;
+ 
+}
+
 .ft-steps-numbers .ft-item {
   display: block;
   position: relative;
@@ -3611,13 +3616,15 @@ cursor: pointer;
 
 .ft-steps-numbers .ft-item .ft-nbr {
   display: inline-block;
-  position: absolute;
-  top: 7px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content:first baseline;
+  top: 50px;
   left: 0;
-  color: rgba(204, 204, 204, 0.4);
-  
+  color: rgba(155, 155, 155, 0.4);
   font-weight: lighter;
-  font-size: 165px;
+  font-size: 90px;
 }
 
 .ft-steps-numbers .ft-item h4, .ft-steps-numbers .ft-item .ft-tabs .tabs-list li a .tab-group .tab-heading, .ft-tabs .tabs-list li a .tab-group .ft-steps-numbers .ft-item .tab-heading, .ft-steps-numbers .ft-item .testimonials-3col .t-item blockquote footer cite, .testimonials-3col .t-item blockquote footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite, .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite, .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer cite, .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite, .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .team-3col .t-item .t-info .t-role, .team-3col .t-item .t-info .ft-steps-numbers .ft-item .t-role, .ft-steps-numbers .ft-item .team-4col .t-item .t-info .t-role, .team-4col .t-item .t-info .ft-steps-numbers .ft-item .t-role, .ft-steps-numbers .ft-item .freelancer-about .t-item .t-info .t-role, .freelancer-about .t-item .t-info .ft-steps-numbers .ft-item .t-role, .ft-steps-numbers .ft-item .t-join .t-info .t-role, .t-join .t-info .ft-steps-numbers .ft-item .t-role, .ft-steps-numbers .ft-item .login-2 .bg-overlay .form-wrapper .form-content .cards-header, .login-2 .bg-overlay .form-wrapper .form-content .ft-steps-numbers .ft-item .cards-header, .ft-steps-numbers .ft-item .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead, .login-2 .bg-overlay .form-wrapper .social-signup .social-card .ft-steps-numbers .ft-item .sc-lead {
@@ -4982,6 +4989,11 @@ cursor: pointer;
   justify-content: center;
 }
 
+.our-partners h1 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
 /* New Client {what they say about us} */
 
 
@@ -5513,7 +5525,8 @@ cursor: pointer;
 }
 
 .testimonials-title h1 {
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 22px;
 }
 
 .testimonials span:hover {
@@ -8937,6 +8950,12 @@ form .input-error-2:focus {
   text-align: center;
   justify-content: center;
   margin-bottom: 15px;
+  margin-top: 120px;
+  font-size: 13px;
+}
+
+.photo-gallery-title h1 {
+  font-weight: 600;
 }
 
 /* Photo Slide End */
@@ -11153,6 +11172,11 @@ form .input-error-2:focus {
   display: flex;
   text-align: center;
   justify-content: center;
+}
+
+.title-members h1 {
+  font-weight: 600;
+  font-size: 22px;
 }
 
 .founder-class {
