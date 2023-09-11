@@ -3355,6 +3355,18 @@ fieldset[disabled] .form-control:hover {
   font-family: 'Inter', sans-serif;
 }
 
+.stride-header-logo-container {
+  display: inline-block;
+  max-width: 100px;
+  height: 20px;
+}
+
+.stride-header-logo {
+  width: 220px;
+  height: 30px;
+}
+
+
 .header {
   position: fixed;
   top: 0;
@@ -3366,15 +3378,6 @@ fieldset[disabled] .form-control:hover {
   justify-content: space-between;
   z-index: 100;
   font-family: 'Inter', sans-serif;
-
-
-}
-
-.logo {
-  font-size: 2.5rem;
-  color: #5dc0e1;
-  font-weight: 600;
-  margin-bottom: 30px;
 }
 
 .navbar a {
