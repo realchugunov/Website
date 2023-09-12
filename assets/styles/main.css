@@ -4573,6 +4573,12 @@ cursor: pointer;
   justify-content: center
 }
 
+.image-container svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
 
 .container-slide {
   width: 170vh;
@@ -5435,7 +5441,7 @@ cursor: pointer;
 }
 
 .testimonials .item h2 {
-  font-size: 14px;
+  font-size: 11px;
   color: #000a18;
   font-weight: 600;
 }
@@ -5481,12 +5487,16 @@ cursor: pointer;
 #t-2:checked ~ .testimonials label[for="t-5"] {
   transform: translate3d(900px, 0, -270px) rotateY(-35deg);
   z-index: 1;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 }
 #t-1:checked ~ .testimonials label[for="t-3"],
 #t-2:checked ~ .testimonials label[for="t-4"],
 #t-3:checked ~ .testimonials label[for="t-5"] {
   transform: translate3d(600px, 0, -180px) rotateY(-25deg);
   z-index: 2;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 }
 #t-1:checked ~ .testimonials label[for="t-2"],
 #t-2:checked ~ .testimonials label[for="t-3"],
@@ -5494,6 +5504,8 @@ cursor: pointer;
 #t-4:checked ~ .testimonials label[for="t-5"] {
   transform: translate3d(300px, 0, -90px) rotateY(-15deg);
   z-index: 3;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 }
 #t-2:checked ~ .testimonials label[for="t-1"],
 #t-3:checked ~ .testimonials label[for="t-2"],
@@ -5501,6 +5513,8 @@ cursor: pointer;
 #t-5:checked ~ .testimonials label[for="t-4"] {
   transform: translate3d(-300px, 0, -90px) rotateY(15deg);
   z-index: 3;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 }
 #t-3:checked ~ .testimonials label[for="t-1"],
 #t-4:checked ~ .testimonials label[for="t-2"],
