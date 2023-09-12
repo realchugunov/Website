@@ -5394,7 +5394,7 @@ cursor: pointer;
   justify-content: center;
   position: relative;
   min-height: 500px;
-  perspective: 500px;
+  perspective: 400px;
   overflow: hidden;
 }
 
@@ -5402,13 +5402,16 @@ cursor: pointer;
   width: 450px;
   padding: 30px;
   border-radius: 5px;
-  background-color: #5dc0e1;
+  background: rgb(93, 192, 225, 0.8);
+  border-radius: 16px;
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(11.5px);
   position: absolute;
   top: 0;
   box-sizing: border-box;
   text-align: center;
   transition: transform 0.4s;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(243, 243, 243, 0.3);
   user-select: none;
   cursor: pointer;
 }
