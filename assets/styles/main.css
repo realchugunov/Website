@@ -886,7 +886,7 @@ text-decoration: none;
   border-top: 0px solid #c1c1c1;
 }
 .ag-offer_item:not(:nth-child(4n)) {
-  border-right: 1px solid #c1c1c1;
+  border-right: 1px solid #5dc0e1;
 }
 .ag-offer_item:nth-child(1) .ag-offer_hidden-item {
   background-color: #000a18;
@@ -4764,7 +4764,7 @@ cursor: pointer;
   font-family: 'Inter', sans-serif;
   font-size: 65px;
   font-weight: lighter;
-  color: #ececec;
+  color: #5dc0e1;
 }
 
 .number-counters .count-wrapper .count-item .count-text, .number-counters-dark-bg .count-wrapper .count-item .count-text {
@@ -5438,6 +5438,7 @@ cursor: pointer;
 
 .testimonials span {
   color: #000a18;
+  font-weight: 600;
 }
 
 .testimonials .item h2 {
@@ -5482,6 +5483,8 @@ cursor: pointer;
 }
 #t-1:checked ~ .testimonials label[for="t-5"] {
   transform: translate3d(1200px, 0, -360px) rotateY(-45deg);
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 }
 #t-1:checked ~ .testimonials label[for="t-4"],
 #t-2:checked ~ .testimonials label[for="t-5"] {
@@ -5520,13 +5523,19 @@ cursor: pointer;
 #t-4:checked ~ .testimonials label[for="t-2"],
 #t-5:checked ~ .testimonials label[for="t-3"] {
   transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 }
 #t-5:checked ~ .testimonials label[for="t-2"],
 #t-4:checked ~ .testimonials label[for="t-1"] {
   transform: translate3d(-900px, 0, -270px) rotateY(35deg);
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 }
 #t-5:checked ~ .testimonials label[for="t-1"] {
   transform: translate3d(-1200px, 0, -360px) rotateY(45deg);
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 }
 #t-1:checked ~ .testimonials label[for="t-1"],
 #t-2:checked ~ .testimonials label[for="t-2"],
