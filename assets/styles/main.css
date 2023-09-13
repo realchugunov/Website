@@ -1319,16 +1319,14 @@ span{
   text-align: baseline;
 }
 
-
-
 .ws-m {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .sec-heading {
   text-align: center;
-  margin-top: 10vh;
-  margin-bottom: 5px;
+  margin-top: 3vh;
+  margin-bottom: 3px;
 }
 
 .sec-heading2 {
@@ -3329,13 +3327,10 @@ fieldset[disabled] .form-control:hover {
 
 #header {
     padding: 5px 5;
-    line-height: 0.2;
     transition: background-color 0.3s, padding 0.3s;
-
 }
 
 #header.sticky {
-
     background-color: #fff;
     color: #333;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -3372,8 +3367,8 @@ fieldset[disabled] .form-control:hover {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 3rem 9%;
-  background: transparent;
+  padding: 3rem 2%;
+  background: white;
   display: flex;
   justify-content: space-between;
   z-index: 100;
@@ -8564,8 +8559,8 @@ form .input-error-2:focus {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(../images/backgroundStrideTwin.png);
-  background-size: cover;
+  background: url(../images/sy-background.png);
+  background-size:auto;
   background-attachment: fixed;
 }
 
@@ -8575,8 +8570,10 @@ form .input-error-2:focus {
   height: 100vh;
   top: 0;
   left: 0;
-  background: rgba(236, 236, 236, 0.2);
-  backdrop-filter: blur(2px);
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
   
 }
 
@@ -8598,16 +8595,16 @@ form .input-error-2:focus {
 }
 
 .main-demo-hero .hero-content-wrapper .hero-content .hero-lead, .fs-video-hero .hero-content-wrapper .hero-content .hero-lead, .fw-video-hero .hero-content-wrapper .hero-content .hero-lead, .text-slider-hero .hero-content-wrapper .hero-content .hero-lead, .freelancer-hero .hero-content-wrapper .hero-content .hero-lead, .agency2-hero .hero-content-wrapper .hero-content .hero-lead, .animated-hero .hero-content-wrapper .hero-content .hero-lead, .web-app-hero .hero-content-wrapper .hero-content .hero-lead {
-  font-size: 6em;
+  font-size: 4em;
   font-weight: 700;
   letter-spacing: 2px;
 }
 
 .main-demo-hero .hero-content-wrapper .hero-content .hero-subheading, .fs-video-hero .hero-content-wrapper .hero-content .hero-subheading, .fw-video-hero .hero-content-wrapper .hero-content .hero-subheading, .text-slider-hero .hero-content-wrapper .hero-content .hero-subheading, .freelancer-hero .hero-content-wrapper .hero-content .hero-subheading, .agency2-hero .hero-content-wrapper .hero-content .hero-subheading, .animated-hero .hero-content-wrapper .hero-content .hero-subheading, .web-app-hero .hero-content-wrapper .hero-content .hero-subheading {
-  margin-top: 80px;
+  margin-top: 20px;
   margin-bottom: 20px;
   color: #56c0e1;
-  margin-left: 40px;
+  margin-left: 1px;
 }
 
 /* ---- 20.2 Full Screen Slider ---- */
@@ -8983,7 +8980,7 @@ form .input-error-2:focus {
   text-align: center;
   justify-content: center;
   margin-bottom: 34px;
-  margin-top: 120px;
+  margin-top: 70px;
   font-size: 13px;
 }
 
@@ -9207,7 +9204,7 @@ form .input-error-2:focus {
 
 /* ---- 20.9 Animated Heading ---- */
 .animated-hero {
-  background: url(../images/backgroundStrideTwin.png);
+  background: url(../images/sy-background-request.png);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
