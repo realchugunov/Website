@@ -886,7 +886,7 @@ text-decoration: none;
   border-top: 0px solid #c1c1c1;
 }
 .ag-offer_item:not(:nth-child(4n)) {
-  border-right: 1px solid black;
+  border-right: 1px solid #B5C99A;
 }
 .ag-offer_item:nth-child(1) .ag-offer_hidden-item {
   background-color: black;
@@ -1018,7 +1018,7 @@ text-decoration: none;
 .ag-offer_text-last {
   margin-top: 2px;
   font-size: 11px;
-  color: #ffffff;
+  color: #b5c99a;
 }
 
 .ag-offer_item:hover .ag-offer_text {
@@ -8883,49 +8883,49 @@ form .input-error-2:focus {
 }
 
 .box-slide:nth-child(1) {
-  background-image: url(https://static.truckersmp.com/images/vtc/gallery/stride-haulage.1675897597.png);
+  background-image: url(../images/volvo-slide-1.jpg);
 }
 .box-slide:nth-child(2) {
-  background-image: url(https://static.truckersmp.com/images/vtc/gallery/stride-haulage.1692175379.png);
+  background-image: url(../images/volvo-slide-2.jpg);
 }
 .box-slide:nth-child(3) {
-  background-image: url(https://static.truckersmp.com/images/vtc/gallery/stride-haulage.1685811218.jpeg);
+  background-image: url(../images/volvo-slide-3.jpg);
 }
 
 .box-slide:nth-child(4) {
-  background-image: url(https://static.truckersmp.com/images/vtc/gallery/stride-haulage.1673651287.jpeg)
+  background-image: url(../images/volvo-slide-4.jpg)
 }
 
 .box-slide:nth-child(5) {
-  background-image: url(https://static.truckersmp.com/images/vtc/gallery/stride-haulage.1673653679.jpeg)
+  background-image: url(../images/volvo-slide-5.jpg)
 }
 
 .box-slide:nth-child(6) {
-  background-image: url(../images/stride-solo-s4.png)
+  background-image: url(../images/volvo-slide-6.jpg)
 }
 
 .box-slide:nth-child(7) {
-  background-image: url(../images/stride-dubble-convoy.png)
+  background-image: url(../images/volvo-slide-7.jpg)
 }
 
 .box-slide:nth-child(8) {
-  background-image: url(https://static.truckersmp.com/images/vtc/gallery/stride-haulage.1674854466.jpeg);
+  background-image: url(../images/volvo-slide-8.jpg);
 }
 
 .box-slide:nth-child(9) {
-  background-image: url(../images/stride-convoy-7.png);
+  background-image: url(../images/volvo-slide-9.jpg);
 }
 
 .box-slide:nth-child(10) {
-  background-image: url(../images/ets2_20230119_182107_00.png);
+  background-image: url(../images/volvo-slide-10.jpg);
 }
 
 .box-slide:nth-child(11) {
-  background-image: url(https://static.truckersmp.com/images/vtc/gallery/stride-haulage.1692174884.png);
+  background-image: url(../images/volvo-slide-11.jpg);
 }
 
 .box-slide:nth-child(12) {
-  background-image: url(https://static.truckersmp.com/images/vtc/gallery/stride-haulage.1673651201.jpeg)
+  background-image: url(../images/volvo-slide-12.jpg)
 }
 
 .nav-for-slide {
