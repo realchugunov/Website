@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Transport Raito - Reliable Transport Services</title>
+    <meta name="description" content="Transport Raito - transport and logistics in Nordic countries and Europe (portfolio demo)">
+    <link rel="shortcut icon" href="./img/raito-favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,700&family=Pathway+Extreme:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./assets/styles/raito.css">
+    <!--<link rel="stylesheet" href="./assets/styles/main.css">-->
+</head>
+<body id="page-top">
+
+    <!-- ========== Top Bar ========== -->
+    <div class="top-bar">
+      <div class="container-raito topbar-inside">
+        <span class="topbar-text">info@transport-raito.example | tel. 000 123 4567</span>
+        <div class="lang-picker" id="langPicker">
+          <svg class="globe-icon" viewBox="0 0 24 24" width="14" height="14"><circle cx="12" cy="12" r="10" fill="none" stroke="#fff" stroke-width="2"/><path d="M2 12h20M12 2c3 3 3 17 0 20M12 2c-3 3-3 17 0 20" fill="none" stroke="#fff" stroke-width="2"/></svg>
+          <span id="langText">English</span>
+          <span class="arrowDown">&#9662;</span>
+          <ul class="lang-list" id="langList">
+            <li><a href="#" data-lang="English">English</a></li>
+            <li><a href="#" data-lang="Suomi">Suomi</a></li>
+            <li><a href="#" data-lang="Svenska">Svenska</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== Navigation ========== -->
+    <header class="header" id="header">
+      <div class="container-raito header-inside">
+        <a href="#page-top" class="raito-header-logo-container">
+          <span class="logo-small">TRANSPORT</span>
+          <span class="logo-big">RAITO</span>
+          <span class="logo-slogan">Your partner in supply chain since 1962</span>
+        </a>
+
+        <!--burger for mobile-->
+        <div class="burger" id="burger" onclick="openMenu()">
+          <span></span><span></span><span></span>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <a href="#services">Services</a>
+            <a href="#fleet">Our Fleet</a>
+          <a href="#about-us">About Us</a>
+            <!-- <a href="#news">News</a> -->
+            <a href="#contact">Contact</a>
+            <a href="#contact" class='btn-red quoteBtn mobile-only'>Request A Quote</a>
+        </nav>
+
+        <a href="#contact" class="btn-red quoteBtn desktop-only">Request A Quote</a>
+      </div>
+    </header>
+
+    <!-- ========== Hero ========== -->
+  <section id="home" class="hero">
+      <div class="hero-img"></div>
+      <div class="container-raito">
+        <div class="heroText">
+          <h1 class="hero-lead">Knowledge comes from experience</h1>
+          <p style="width: 467px; height: 155px">
+            Transport Raito provides versatile, reliable, and environmentally friendly transport
+            services in a cost-effective manner with 60 years of experience.
+          </p>
+          <a href="#about-us" class="btn-red">More about the company</a>
+          <!-- <a href="#contact" class="btn-red" style="margin-left:20px">Contact us</a> -->
+        </div>
+      </div>
+  </section><!-- end hero -->
+
+    <!-- ========== Services ========== -->
+    <section id="services" class="services-section">
+      <div class="container-raito">
+        <h2 class="title-italic">Always fast transportation services</h2>
+        <p class="big-p">
+          Transport Raito offers its customers dependable, affordable, and eco-friendly transportation
+          and logistics solutions throughout the Nordic regions and Europe. Our services are trusted
+          in many industrial sectors.
+        </p>
+
+        <!--slider-->
+        <div class="service-slider" id="serviceSlider">
+          <div class="slider-track" id="sliderTrack">
+
+            <div class="service-card">
+              <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1616432043562-3671ea2e5242?w=900&q=70&auto=format&fit=crop');"></div>
+              <div class="service-text">
+                <h3>Full truck loads</h3>
+                <p>Whole trailer just for your cargo, straight from A to B without stops.</p>
+              </div>
+            </div>
+
+            <div class="service-card" id="card2">
+              <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1631744591853-998c4308bbb0?w=900&q=70&auto=format&fit=crop');"></div>
+              <div class="service-text">
+                <h3>Special transports</h3>
+                <p>Long, wide, heavy and high items. We plan the route and permits for you.</p>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1492168732976-2676c584c675?w=900&q=70&auto=format&fit=crop');"></div>
+              <div class="service-text">
+                <h3>Warehousing</h3>
+                <p>Storage and terminal services so your goods are ready when you need them.</p>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1592805144716-feeccccef5ac?w=900&q=70&auto=format&fit=crop');"></div>
+              <div class="service-text">
+                <h3>ADR transports</h3>
+                <p>Dangerous goods handled by trained drivers with the right equipment.</p>
+              </div>
+            </div>
+
+            <!--
+            <div class="service-card">
+              <div class="service-img"></div>
+              <div class="service-text">
+                <h3>Container transport</h3>
+                <p>coming soon</p>
+              </div>
+            </div>
+            -->
+
+          </div>
+        </div>
+        <!-- dots get made in js but i left these here just in case -->
+        <div class="dots" id="dots">
+          <span class="dot active" onclick="goSlide(0)"></span>
+          <span class="dot" onclick="goSlide(1)"></span>
+        </div>
+      </div>
+    </section><!-- end of slider -->
+
+    <!-- ========== CTA quote ========== -->
+    <section class="cta-quote">
+      <div class="container-raito cta-flex">
+        <div class="cta-left">
+          <h3 class="title-italic small-title">Looking for a reliable transport company? Leave us a request for quote and we will be in touch.</h3>
+          <p>We offer reliable transport services to Scandinavia and Europe.</p>
+        </div>
+        <div class="cta-right">
+          <a href="#contact" class="btn-red">Request A Quote</a>
+          <a href="#contact" class="small-link">Find all contact information.</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== About ========== -->
+    <section id="about-us" class="about-company">
+      <div class="about-flex">
+        <div class="about-text">
+          <h2 class="title-italic big-title">Raito Transport – a reliable partner in transport</h2>
+          <p class="big-p">
+            With more than 60 years of experience, Transport Raito Oy offers adaptable, reliable, and green
+            transportation services that are cost effective. Currently, the total number of vehicles consists
+            of more than 150 modern units suitable for various tasks and needs.
+          </p>
+
+          <div class="numbers" id="numbers">
+              <div class="number-item">
+              <span class="count-nbr" data-count="1962">1962</span>
+              <span class="count-text">Founded</span>
+            </div>
+            <div class="number-item">
+              <span class="count-nbr" data-count="140">140</span>
+              <span class="count-text">Employees</span>
+            </div>
+            <div class="number-item">
+              <span class="count-nbr" data-count="25">25</span>
+              <span class="count-text">Turnover (M€)</span>
+            </div>
+            <div class="number-item">
+              <span class="count-nbr" data-count="12">12</span>
+              <span class="count-text">Million km per year</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image" style="background-image: url('https://images.unsplash.com/photo-1626121300305-def4dc305387?w=1400&q=70&auto=format&fit=crop')"></div>
+      </div>
+    </section>
+
+    <!-- ========== Why choose ========== -->
+    <section class='why_choose'>
+      <div class="container-raito">
+        <h2 class="title-italic white">Why choose Raito?</h2>
+
+        <div class="why-grid">
+          <div class="why-item"><span class="red-arrow">&#10095;</span>Centralised transport planning and control</div>
+          <div class="why-item"><span class="red-arrow">&#10095;</span>Innovative and customer-oriented thinking</div>
+          <div class="why-item"><span class="red-arrow">&#10095;</span>Modern and eco-friendly fleet</div>
+          <div class="why-line"></div> <!--line in the middle-->
+          <div class="why-item"><span class="red-arrow">&#10095;</span>Fast response and competitive pricing</div>
+          <div class="why-item"><span class="red-arrow">&#10095;</span>The responsibility and expertise typical of a family business</div>
+          <div class="why-item"><span class="red-arrow">&#10095;</span>A people-oriented, relaxed company with a good sense of humour</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Fleet ========== -->
+    <section id="fleet" class="fleetSection">
+      <div class="container-raito fleet-flex">
+        <div class="fleet-text">
+          <h2 class="title-italic">Learn more about our fleets and routes</h2>
+          <p>
+            Transport Raito offers services across the Scandinavian and Baltic regions, along with other areas
+            of Europe. The company operates with around 70 of its own units and 90 units driving for the company.
+            Our fleet also includes special transport units for long, wide, heavy, and high items.
+          </p>
+          <ul class="fleet-list">
+            <li><span class="check">&#10003;</span> A flexible fleet for every situation.</li>
+            <li><span class="check">&#10003;</span> All units equipped for the transport of dangerous goods.</li>
+            <li><span class="check">&#10003;</span> The fleet meets the latest environmental requirements.</li>
+          </ul>
+          <a href="#contact" class="btn-red">Read More</a>
+      </div>
+        <div class="fleet-img">
+          <img src="https://images.unsplash.com/photo-1586191552066-d52dd1e3af86?w=1200&q=70&auto=format&fit=crop" alt="truck on the road">
+          <!-- <img src="./img/truck.jpg" alt=""> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials (removed for now) =====
+    <section class="testimonials">
+      <div class="container-raito">
+        <h2 class="title-italic">What our customers say</h2>
+      </div>
+    </section>
+    -->
+
+    <!-- ========== Footer ========== -->
+    <footer id="contact" class="footer">
+      <div class="container-raito">
+        <div class="footer-top">
+          <a href="#page-top" class="raito-header-logo-container footer-logo">
+            <span class="logo-small white">TRANSPORT</span>
+            <span class="logo-big">RAITO</span>
+            <span class="logo-slogan white">Your partner in supply chain since 1962</span>
+          </a>
+          <div class="footer-nav">
+              <a href="#services">Services</a>
+              <a href="#fleet">Our Fleet</a>
+              <a href="#about-us">About Us</a>
+              <a href="#contact">Contact</a>
+          </div>
+          <ul class="social-ul">
+            <!--icons are just simple svg, no font awesome anymore because it was broken-->
+            <li class="social-li"><a href="#" aria-label="facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg></a></li>
+            <li class="social-li"><a href="#" aria-label="instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 5.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a></li>
+            <li class="social-li"><a href="#" aria-label="linkedin"><svg viewBox="0 0 24 24"><path d="M4 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM2 9h4v12H2zM9 9h4v1.7c.6-1 1.9-2 4-2 4 0 5 2.5 5 6V21h-4v-5.5c0-1.5-.3-3-2-3s-2.5 1.3-2.5 3V21H9z"/></svg></a></li>
+            <li class="social-li"><a href="#" aria-label="youtube"><svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.8 15.1V8.9L15.5 12z"/></svg></a></li>
+          </ul>
+        </div>
+
+        <div class="footer-middle">
+          <div class="footer-info">
+            <p class="bold-p">info@transport-raito.example | tel. 000 123 4567</p>
+            <p>
+              Transport Raito has been providing various logistics services since 1962. Today we offer innovative
+              transport solutions, the most skilled drivers, the most modern processes and the most modern equipment.
+            </p>
+          </div>
+          <div class="badges">
+            <span class="badge">ISO 9001</span>
+            <span class="badge">ISO 14001</span>
+            <span class="badge">AAA credit</span>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <small>&copy; <span id="year">2026</span> Transport Raito Oy &nbsp;|&nbsp; Portfolio demo, company and content are fictional</small>
+          <small><a href="#page-top" class="to-the-top">To the top &#8593;</a></small>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========== Scripts ========== -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="./assets/js/raito.js"></script>
+</body>
+</html>
